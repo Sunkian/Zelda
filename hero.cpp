@@ -13,6 +13,9 @@
 #include <QGraphicsScene>
 #include <QDebug>
 #include <enemies.h>
+#include <QMessageBox>
+
+QMessageBox * msgBox;
 
 
 Hero::Hero(QGraphicsItem *parent):QGraphicsPixmapItem (parent)
@@ -95,7 +98,15 @@ void Hero::movement(int xMove, int yMove) {
         qDebug()<<hp;
         break;
 
-    default:
+    case PRINCESS:
+        QMessageBox msgBox;
+         msgBox.setText("Vous avez sauvé la princesse, bien joué ! :)");
+         msgBox.setInformativeText("Le jeu va s'éteindre, recompilez le pour réessayer ");
+         msgBox.setStandardButtons(QMessageBox::Ok);
+         msgBox.exec();
+        this->endGame();
+
+//    default:
         break;
     }
 }
