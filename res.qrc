@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>link_50.png</file>
+        <file>fireball.jpg</file>
+        <file>wall2.png</file>
+        <file>door2.png</file>
+        <file>dungeon2.png</file>
+        <file>doorhard22.png</file>
+        <file>key.jpg</file>
+        <file>pioupiou.jpg</file>
+        <file>rock.png</file>
+        <file>ladder.jpg</file>
+        <file>potion.jpg</file>
+        <file>potion2.jpg</file>
+        <file>menu.jpg</file>
+        <file>princess.png</file>
+        <file>princess2.jpg</file>
+    </qresource>
+</RCC>
